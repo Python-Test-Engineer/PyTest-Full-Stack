@@ -3,8 +3,9 @@
 import configparser
 from pathlib import Path
 
-CG_FILE = "config.ini"
 CG_FILE_DIR = "config"
+CG_FILE = "config.ini"
+
 # cg_fileFlaskApp = "qa.ini"
 
 config = configparser.ConfigParser()

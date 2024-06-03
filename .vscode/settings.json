@@ -1,5 +1,5 @@
 {
-   "terminal.integrated.fontSize": 14,
+   "terminal.integrated.fontSize": 20,
    "python.terminal.activateEnvironment": true,
    "editor.renderLineHighlight": "all",
    "editor.renderWhitespace": "selection",
