@@ -18,4 +18,5 @@ def new_function():
     print("This is the new function.")
 
 
-old_function()
+if __name__ == "__main__":
+    old_function()
