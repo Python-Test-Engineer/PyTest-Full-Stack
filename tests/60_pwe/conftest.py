@@ -5,6 +5,11 @@ import pytest_html
 from pytest_metadata.plugin import metadata_key
 
 
+def pytest_addoption(parser):
+    parser.addoption("--configpath", action="store", help="Location to YAML file")
+    parser.addoption("--env", action="store", help="Environment to read from YAML file")
+
+
 def pytest_html_report_title(report):
     report.title = "Pytest HTML Report Example"
 
