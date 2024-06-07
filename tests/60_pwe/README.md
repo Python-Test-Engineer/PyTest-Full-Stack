@@ -9,3 +9,4 @@ pip installs required to date:
 - `pip install pytest-html`
 - `pip install typer`
 - `pip install PyYAML`
+- `pip install pytest-mock`
