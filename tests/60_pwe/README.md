@@ -6,4 +6,6 @@ These are for my own development and also to add the tests to PyTest Full Stack.
 
 pip installs required to date:
 
-- pytest-html
+- `pip install pytest-html`
+- `pip install typer`
+- `pip install PyYAML`
