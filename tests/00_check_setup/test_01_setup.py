@@ -73,9 +73,9 @@ def test_0234_xpass():
 
 def test_0236_fail():
     """A test"""
-    assert False
+    func1()
 
 
 def func1():
     """A test"""
-    raise ValueError("EXPECTED IndexError func1 raised")
+    raise ValueError("EXPECTED FAIL due to IndexError func1 raised")

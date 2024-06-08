@@ -7,6 +7,6 @@ import pytest
 @pytest.fixture
 def initial_value():
     """Doc"""
-    print("Providing a value to our test!")
+    print("\nProviding a value to our test!")
     yield 5
-    print("Finishing Up!")
+    print("\nFinishing Up!")
