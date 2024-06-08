@@ -3,7 +3,15 @@ from sqlalchemy.exc import TimeoutError, OperationalError
 from task_manager.db import DB
 
 
-def test_db_connection_timeout(mocker):
+def test_0770_pass():
+    assert 1
+
+
+def test_0772_pass():
+    assert 1
+
+
+def test_0773_db_connection_timeout(mocker):
     # Simulate TimeoutError
     mocker.patch("task_manager.db.create_engine", side_effect=TimeoutError)
 
@@ -12,7 +20,7 @@ def test_db_connection_timeout(mocker):
         db = DB()  #
 
 
-def test_session_failure(session, mocker, task1):
+def test_0774_session_failure(session, mocker, task1):
     db = DB()
 
     # Correctly instantiate an OperationalError for mocking
