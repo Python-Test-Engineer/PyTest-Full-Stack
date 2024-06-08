@@ -27,7 +27,8 @@ jobs:
          - name: Run tests
            run: pip install -r requirements.txt
          - name: Run tests
-           run: pytest tests/00_check_setup
+           working-directory: ./src/
+           run: pytest 
 
  
 
