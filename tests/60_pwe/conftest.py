@@ -9,7 +9,7 @@ from task_manager.db import DB
 from task_manager.model import Tasks, TaskStatus
 
 
-@pytest.fixture
+@pytest.fixture(scope="session")
 def task1():
     """
     Create a Task 1
@@ -22,7 +22,7 @@ def task1():
     yield task1
 
 
-@pytest.fixture
+@pytest.fixture(scope="session")
 def task2():
     """
     Create a Task 2
