@@ -10,6 +10,7 @@ pip installs required to date:
 - `pip install typer`
 - `pip install PyYAML`
 - `pip install pytest-mock`
+- `pip install tox`
 
 Because of the nature of conftest.py seemingly unble to read src/task_manager based on its location here, the src files, as it were, are placed in 60_pwe/task_manager.
 
