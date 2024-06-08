@@ -13,4 +13,5 @@ def test_postgres_should_work():
         cur.execute("SELECT 1+1")
         res = cur.fetchall()
         assert res[0][0] == 2
+        print("\n---> DONE")
         conn.close()
