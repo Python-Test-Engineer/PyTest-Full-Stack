@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "docker-pytest"
+version = "0.1.0"
+description = ""
+authors = ["Craig West <iwswordpress@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+psycopg2-binary = "^2.9.9"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+fixtup = "^0.1.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tools.fixtup]
+fixtures = "tests/fixtures"
+plugins = [
+    "fixtup.plugins.dotenv",
+    "fixtup.plugins.docker"
+]
