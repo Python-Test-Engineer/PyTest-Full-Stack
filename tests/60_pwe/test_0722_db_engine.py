@@ -1,3 +1,5 @@
+# https://pytest-with-eric.com/database-testing/pytest-sql-database-testing/
+
 import pytest
 from sqlalchemy.exc import TimeoutError, OperationalError
 from task_manager.db import DB
