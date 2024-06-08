@@ -4,7 +4,7 @@ from task_manager.model import TaskStatus
 from task_manager.exceptions import TaskNotFoundError
 
 
-def test_create_and_read_task(db_instance_empty, session, task1):
+def test_0721_create_and_read_task(db_instance_empty, session, task1):
     """
     Test the creation and reading of a task
     """
@@ -18,7 +18,7 @@ def test_create_and_read_task(db_instance_empty, session, task1):
     assert task.status == task1.status
 
 
-def test_read_all_tasks(db_instance_empty, session, task1, task2):
+def test_0722_read_all_tasks(db_instance_empty, session, task1, task2):
     """
     Test the reading of all tasks
     """
@@ -33,7 +33,7 @@ def test_read_all_tasks(db_instance_empty, session, task1, task2):
     assert tasks[1].title == task2.title
 
 
-def test_read_all_tasks_empty(db_instance_empty, session):
+def test_0723_read_all_tasks_empty(db_instance_empty, session):
     """
     Test the reading of all tasks when the DB is empty
     """
@@ -42,7 +42,7 @@ def test_read_all_tasks_empty(db_instance_empty, session):
     assert len(tasks) == 0
 
 
-def test_delete_task(db_instance_empty, session, task1, task2):
+def test_0724_delete_task(db_instance_empty, session, task1, task2):
     """
     Test the deletion of a task
     """
@@ -58,7 +58,7 @@ def test_delete_task(db_instance_empty, session, task1, task2):
         db_instance_empty.read_task(task_id=1, session=session)
 
 
-def test_delete_all_tasks(db_instance_empty, session, task1, task2):
+def test_0725_delete_all_tasks(db_instance_empty, session, task1, task2):
     """
     Test the deletion of all tasks
     """
@@ -74,7 +74,7 @@ def test_delete_all_tasks(db_instance_empty, session, task1, task2):
     assert len(tasks) == 0
 
 
-def test_update_task(db_instance_empty, session, task1):
+def test_0726_update_task(db_instance_empty, session, task1):
     """
     Test the updating of a task (status)
     """
@@ -101,7 +101,7 @@ def test_update_task(db_instance_empty, session, task1):
     assert task.description == task1.description
 
 
-def test_update_task_updated_at(db_instance_empty, session, task1):
+def test_0728_update_task_updated_at(db_instance_empty, session, task1):
     """
     Test the updating of a task (updated_at)
     """
