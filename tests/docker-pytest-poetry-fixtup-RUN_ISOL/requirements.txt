@@ -1,0 +1,5 @@
+pytest
+psycopg2-binary
+fixtup
+poetry
+pyboxen
