@@ -30,6 +30,7 @@ def http_service(docker_ip, docker_services):
 
 def test_0901_status_code(http_service):
     status = 418
+    # Some websites use this response for requests they do not wish to handle, such as automated queries - returns 418
     response = requests.get(http_service + "/status/{}".format(status))
 
     assert response.status_code == status
