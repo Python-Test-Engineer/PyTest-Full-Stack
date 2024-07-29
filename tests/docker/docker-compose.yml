@@ -1,6 +1,0 @@
-version: "3.9" # in docs 2 is used but this will fail
-services:
-  httpbin:
-    image: "kennethreitz/httpbin"
-    ports:
-      - "8000:80"

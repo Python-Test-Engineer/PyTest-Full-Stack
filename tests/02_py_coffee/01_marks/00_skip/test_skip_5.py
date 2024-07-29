@@ -1,8 +1,11 @@
-"""A simple example using the skip marker in pytest"""
+"""A simple example using the importorskip in pytest.
+
+If the module `module_does_not_exist` is not installed, this module will be skipped.
+"""
 
 import pytest
 
-my_import = pytest.importorskip("my_module")
+my_import = pytest.importorskip("module_does_not_exist")
 
 
 # Simple function that squares a number
@@ -11,8 +14,14 @@ def square(num: int) -> int:
     return num * num
 
 
-# A single test marked with skip
-def test_0057_square() -> None:
+def test_SKP08_square() -> None:
+    """Doc"""
+    num = 7
+    result = square(num)
+    assert result == num**2
+
+
+def test_SKP07_square() -> None:
     """Doc"""
     num = 5
     result = square(num)

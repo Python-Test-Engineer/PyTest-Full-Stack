@@ -1,5 +1,8 @@
 """Some assert examples"""
 
+import pytest
+
+
 from utils.read_config import get_version
 
 

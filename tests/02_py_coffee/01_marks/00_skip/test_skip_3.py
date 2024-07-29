@@ -1,6 +1,5 @@
 """A simple example using the skip marker in pytest"""
 
-
 import pytest
 
 
@@ -12,7 +11,7 @@ def square(num: int) -> int:
 
 # A single test marked with skip
 @pytest.mark.skip(reason="Look! We are skipping this test!")
-def test_0050_square() -> None:
+def test_SKP05_square() -> None:
     """Doc"""
     num = 5
     result = square(num)

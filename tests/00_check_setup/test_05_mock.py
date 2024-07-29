@@ -1,55 +1,33 @@
-"""MOCK"""
-#  https://www.youtube.com/watch?v=ZLeNbmpx7cc
-import unittest
-from unittest.mock import Mock
-from requests.exceptions import Timeout
-import pytest
+"""Mock ope"""
 
-cx_Oracle = Mock()
+from unittest import mock
 
 
-@pytest.mark.mocks
-def query_database(sql: str):
-    """doc string"""
-    db_user = "blah"
-    db_pass = "blah"
-    db_dsn = "(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = tcp)(host = host1) (Port = 1525))) (CONNECT_DATA = (SID = orcl)))"
-
-    try:
-        res = (
-            cx_Oracle.connect(db_user, db_pass, dsn=db_dsn)
-            .cursor()
-            .execute(sql)
-            .fetchall()
-        )
-        print("Query executed successfully.")
-    except:
-        print("Insert the error into a log table.")
-
-    return res[0][0]
+def do_open(path):
+    """docstring"""
+    with open(path, "r", encoding="utf-8") as f:
+        return f.read()
 
 
-@pytest.mark.mocks
-class TestDatabase(unittest.TestCase):
-    """doc string"""
-
-    def test_0021_query_database(self):
-        """doc string"""
-        sql = "select max(id) from orders"
-        cx_Oracle.connect().cursor().execute(sql).fetchall.return_value = [(100,)]
-        self.assertEqual(query_database(sql), 100)
-
-    def test_0021_query_database(self):
-        """doc string"""
-        sql = "select max(id) from orders"
-        cx_Oracle.connect().cursor().execute(sql).fetchall.side_effect = [
-            [(100,)],
-            Timeout,
-        ]
-        self.assertEqual(query_database(sql), 100)
-        with self.assertRaises(Exception):
-            query_database(sql)
+builtin_open = open  # save the unpatched version
 
 
-if __name__ == "__main__":
-    unittest.main()
+def mock_open(*args, **kwargs):
+    """docstring"""
+    if args[0] == "foo":
+        # mocked open for path "foo"
+        return mock.mock_open(read_data="bar")(*args, **kwargs)
+    # unpatched version for every other path
+    return builtin_open(*args, **kwargs)
+
+
+@mock.patch("builtins.open", mock_open)
+def test_0126_open():
+    """docstring"""
+    assert do_open("foo") == "bar"
+
+
+@mock.patch("builtins.open", mock_open)
+def test_0127_open2():
+    """docstring"""
+    assert do_open(__file__) != "bar"

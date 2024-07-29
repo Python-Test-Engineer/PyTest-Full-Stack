@@ -2,12 +2,9 @@
 
 ## Installation
 
-- `python -m venv venv`
+- create virtual env
 - `pip install -r requirements.txt` 
 - `playwright install` to load browsers
-- `.\venv\Scripts\activate` on Windows
-- `source venv/bin/activate` on Mac
--  `python -m pytest -vs`
 
 ## Repository Purpose
 

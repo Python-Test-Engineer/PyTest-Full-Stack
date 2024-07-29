@@ -2,11 +2,15 @@
 
 from time import sleep
 import pytest
+from rich.console import Console
+
+console = Console()
 
 
 def test_0001_pass():
     sleep(1)
     """A test"""
+    console.print("\n[blue bold]Testing Rich[/]\n")
     assert True
 
 
@@ -24,6 +28,7 @@ def test_0003_xpass():
 
 def test_0004_fail():
     """A test"""
+    console.print("[red italic]Example of failed test[/]⚠️")
     assert False
 
 
@@ -71,11 +76,6 @@ def test_0234_xpass():
     assert True
 
 
-def test_0236_fail():
-    """A test"""
-    func1()
-
-
 def func1():
     """A test"""
-    raise ValueError("EXPECTED FAIL due to IndexError func1 raised")
+    raise ValueError("EXPECTED IndexError func1 raised")

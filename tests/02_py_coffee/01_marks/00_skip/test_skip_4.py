@@ -1,6 +1,5 @@
 """A simple example using the skip marker in pytest"""
 
-
 import sys
 
 import pytest
@@ -16,7 +15,7 @@ def square(num: int) -> int:
 @pytest.mark.skipif(
     sys.version_info > (3, 6), reason="Test requires Python version <= 3.6!"
 )
-def test_0056_square() -> None:
+def test_SKP06_square() -> None:
     """Doc"""
     num = 5
     result = square(num)
