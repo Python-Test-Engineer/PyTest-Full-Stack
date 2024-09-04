@@ -1,5 +1,10 @@
-"""A simple example xfail tests in pytest"""
+"""A simple example xfail tests in pytest
+By specifying on the commandline:
 
+pytest --runxfail
+you can force the running and reporting of an xfail marked test as if it weren’t marked at all. This also causes pytest.xfail() to produce no effect.
+
+"""
 
 import pytest
 
