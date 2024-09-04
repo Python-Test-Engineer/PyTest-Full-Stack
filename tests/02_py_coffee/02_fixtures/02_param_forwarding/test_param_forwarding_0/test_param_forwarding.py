@@ -1,5 +1,7 @@
-"""A simple example of test fixtures"""
+"""https://www.youtube.com/watch?v=5sJ3rTGenXs&list=PLxNPSjHT5qvuZ_JT1bknzrS8YqLiMjNpS&index=8
 
+This explains how we can pass a value on the command line to determine how many values will be in our list
+"""
 
 import pytest
 
