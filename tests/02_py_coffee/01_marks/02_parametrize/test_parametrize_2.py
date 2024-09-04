@@ -15,7 +15,7 @@ def pow(base: int, exponent: int) -> int:
 # Our test parametrized test
 @pytest.mark.parametrize("base", [1, 2, 3])
 @pytest.mark.parametrize("exponent", [4, 5, 6])
-def test_0076_pow(base: int, exponent: int) -> None:
+def test_0236_PRM_pow(base: int, exponent: int) -> None:
     """Doc"""
     # Test if our function matches math.pow
     result = pow(base, exponent)

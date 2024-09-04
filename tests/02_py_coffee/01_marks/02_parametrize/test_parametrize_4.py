@@ -18,6 +18,7 @@ def square(num: int) -> int:
         pytest.param(1, id="positive"),
     ],
 )
-def test_0078_square(num: int) -> None:
+def test_0238_PRM_square(num: int) -> None:
+    """We can use friendly ids"""
     result = square(num)
     assert result == num**2
