@@ -3,7 +3,9 @@ from sqlmodel import create_engine, inspect
 from sqlmodel import Integer
 from pathlib import Path
 
-from rich import print as rprint
+from rich.console import Console
+
+console = Console()
 
 DB = "sql_inspect.sqlite"
 
@@ -41,7 +43,7 @@ inspector = inspect(engine)
 # rprint(columns)
 
 
-def test_0023_db_column_type():
+def test_0100_SQL_db_column_type():
     # Get column information
     # print("==========================")
     # print("\n\nis_trackid_integer")
@@ -54,33 +56,27 @@ def test_0023_db_column_type():
 #  get FK
 
 
-def test_0024_db_artist_has_no_fk():
+def test_0101_SQL_db_artist_has_no_fk():
     """Check Foreign Keys artist"""
     # print("==========================")
     # print("\n\nartists_has_no_fk")
     table = "artists"
     foreign_keys_artist = inspector.get_foreign_keys(table)
     assert len(foreign_keys_artist) == 0
-    # rprint("Foreign Keys for artists?: ", foreign_keys_artist)
+    console.print(f"\n[green]Foreign Keys for artists?: {foreign_keys_artist}")
 
 
-def test_0025_db_track_has_fk():
+def test_0102_SQL_db_track_has_fk():
     # print("==========================")
     # print("\n\ntrack_has_fk")
     """Check Foreign Keys track - there is one track to artist"""
     table = "tracks"
     foreign_keys_track = inspector.get_foreign_keys(table)
 
-    # if len(foreign_keys_track) > 0:
-    #     rprint(
-    #         "Is there a Foreign Keys for the tracks table: ",
-    #         len(foreign_keys_track) > 0,
-    #     )
-    #     rprint("Foreign Keys track: ", foreign_keys_track)
     assert len(foreign_keys_track) > 0
 
 
-def test_0026_db_nullables():
+def test_0103_SQL_db_nullables():
     """Check trackid is not nullable"""
     table = "tracks"
     # Get column information
@@ -88,7 +84,7 @@ def test_0026_db_nullables():
     assert columns["trackid"]["nullable"] is False
 
 
-def test_0027_db_primary_key():
+def test_0104_SQL_db_primary_key():
     """Check trackid is primary key"""
     table = "tracks"
     # Get column information
@@ -96,7 +92,7 @@ def test_0027_db_primary_key():
     assert columns["trackid"]["primary_key"] == 1  # i.e true
 
 
-def test_0028_db_default():
+def test_0105_SQL_db_default():
     """Check trackid has default value"""
     table = "tracks"
     # Get column information
@@ -105,7 +101,7 @@ def test_0028_db_default():
     assert columns["trackname"]["default"] == "'TONY'"  # in db schema value is 'TONY'
 
 
-def test_0029_db_unique():
+def test_0106_SQL_db_unique():
     """
     Check artistname is unique. N/A in SQLite
     """
@@ -119,7 +115,7 @@ def test_0029_db_unique():
 
 
 @pytest.mark.xfail
-def test_0030_db_check_constraint():
+def test_0107_SQL_db_check_constraint():
     """
     Check trackname has min 5 characters
 
@@ -130,6 +126,6 @@ def test_0030_db_check_constraint():
     # print(
     #     "In sqlite the CHECK constraint is not in the schema. It is, though, in the database."
     # )
-    print("We could do an insert test to raise an exception.")
+    console.print("\n[green]We could do an insert test to raise an exception.[/]")
     assert columns["trackname"]["check"] != ""
     assert True
