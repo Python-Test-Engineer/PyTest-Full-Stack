@@ -7,19 +7,14 @@ from src.sample import add
 console = Console()
 
 
-def test_0012_add_num():
-    """basic test"""
-    assert add(1, 2) == 3
-
-
 class TestSample:
-    """Class test"""
+    """Class based est"""
 
-    def test_0013_add_num(self):
-        """fn test"""
+    def test_0031_SET_add_num(self):
+        """fn test in a class"""
         assert add(1, 2) == 3
 
-    def test_0333_add_num_fail(self):
-        """fn test"""
+    def test_0032_SET_add_num_fail(self):
+        """failing fn test in a class"""
         console.print("[red italic]Example of failed test[/]⚠️")
         assert add(1, 2) == 5
