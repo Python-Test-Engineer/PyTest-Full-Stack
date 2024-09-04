@@ -13,6 +13,6 @@ def sleep() -> None:
 
 # A test for our sleep function
 @pytest.mark.parametrize("variant", range(3))
-def test_0090_sleep(variant: int) -> None:
+def test_0270_PLG_sleep(variant: int) -> None:
     """Doc"""
     sleep()

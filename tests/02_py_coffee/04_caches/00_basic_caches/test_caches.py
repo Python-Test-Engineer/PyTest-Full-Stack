@@ -8,7 +8,7 @@ def square(num: int) -> int:
 
 
 # One test that uses our fixture
-def test_0089_square(expensive_value: int) -> None:
+def test_0260_CHE_square(expensive_value: int) -> None:
     """Doc"""
     result = square(expensive_value)
     assert result == expensive_value**2
