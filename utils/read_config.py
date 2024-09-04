@@ -25,5 +25,5 @@ def get_version():
     return config["framework"]["version"]
 
 
-print(f"PET API: {get_pet_api_url()}")
-print(f"VERSION: {get_version()}")
+# print(f"PET API: {get_pet_api_url()}")
+# print(f"VERSION: {get_version()}")

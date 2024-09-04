@@ -28,7 +28,7 @@ def test_0003_SET_xpass():
 
 def test_0004_SET_fail():
     """A test fail to show as an example"""
-    console.print("[red italic]Example of failed test[/]⚠️")
+    console.print("[red italic]Example of a failed test[/]⚠️")
     assert False
 
 

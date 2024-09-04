@@ -1,5 +1,8 @@
 """A simple conftest file for pytest"""
 
+from rich.console import Console
+
+console = Console()
 
 import pytest
 
@@ -8,5 +11,6 @@ import pytest
 @pytest.fixture
 def initial_value() -> int:
     """Doc"""
-    print("Providing the value 10!")
+    console.print("\n[cyan]Inner level providing the value 10![/]")
+    console.print("[green]Closest conftest applies[/]")
     return 10
