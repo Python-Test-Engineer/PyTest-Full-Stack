@@ -11,7 +11,7 @@ def square(num: int) -> int:
 
 
 # A single test marked with skip
-def test_SKP04_square() -> None:
+def test_0207_SKP_square() -> None:
     """Doc"""
     pytest.skip()
     num = 5

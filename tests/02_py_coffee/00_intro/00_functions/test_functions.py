@@ -15,7 +15,7 @@ def cube(num: int) -> int:
 
 
 # Tests start with "test_"
-def test_0040_quare():
+def test_0201_GEN_quare():
     """Doc"""
     num = 5
     result = square(num)
@@ -23,7 +23,7 @@ def test_0040_quare():
 
 
 # Define another test in the same file
-def test_0041_cube():
+def test_0202_GEN_1_cube():
     """Doc"""
     num = 5
     result = cube(num)

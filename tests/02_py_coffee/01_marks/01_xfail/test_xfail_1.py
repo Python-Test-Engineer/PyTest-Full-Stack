@@ -10,9 +10,9 @@ def square(num: int) -> int:
 
 
 # A single test marked with xfail (we expect the test to fail)
-def test_0061_square() -> None:
+def test_0221_XFL_square() -> None:
     """Doc"""
-    pytest.xfail()
+    pytest.xfail("optional message here")
     num = 5
     result = square(num)
     assert result == num**2

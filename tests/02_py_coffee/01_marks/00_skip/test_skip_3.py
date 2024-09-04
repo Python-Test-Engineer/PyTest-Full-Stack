@@ -11,7 +11,7 @@ def square(num: int) -> int:
 
 # A single test marked with skip
 @pytest.mark.skip(reason="Look! We are skipping this test!")
-def test_SKP05_square() -> None:
+def test_0208_SKP_square() -> None:
     """Doc"""
     num = 5
     result = square(num)

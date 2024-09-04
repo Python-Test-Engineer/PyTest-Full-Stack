@@ -24,13 +24,13 @@ class TestClass:
     num = 5
 
     # Test squaring of a number
-    def test_SKP02_square(self) -> None:
+    def test_0205_SKP_square(self) -> None:
         """Doc"""
         result = square(self.num)
         assert result == self.num**2
 
     # Test cubing of a number
-    def test_SKP03_cube(self) -> None:
+    def test_0206_SKP_cube(self) -> None:
         """Doc"""
         result = cube(self.num)
         assert result == self.num**3

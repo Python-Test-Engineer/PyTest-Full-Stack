@@ -15,7 +15,7 @@ def square(num: int) -> int:
 @pytest.mark.skipif(
     sys.version_info > (3, 6), reason="Test requires Python version <= 3.6!"
 )
-def test_SKP06_square() -> None:
+def test_0209_SKP_square() -> None:
     """Doc"""
     num = 5
     result = square(num)

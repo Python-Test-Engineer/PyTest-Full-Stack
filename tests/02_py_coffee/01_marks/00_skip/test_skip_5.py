@@ -14,14 +14,14 @@ def square(num: int) -> int:
     return num * num
 
 
-def test_SKP08_square() -> None:
+def test_0210_SKP_square() -> None:
     """Doc"""
     num = 7
     result = square(num)
     assert result == num**2
 
 
-def test_SKP07_square() -> None:
+def test_0211_SKP_square() -> None:
     """Doc"""
     num = 5
     result = square(num)

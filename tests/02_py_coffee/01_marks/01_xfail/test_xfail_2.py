@@ -11,7 +11,7 @@ def square(num: int) -> int:
 
 # A single test marked with xfail (we expect the test to fail)
 @pytest.mark.xfail(reason="There is a bug in our implementation!")
-def test_0068_square() -> None:
+def test_0223_XFL_square() -> None:
     """Doc"""
     num = 5
     result = square(num)
