@@ -24,7 +24,7 @@ def square(num: int) -> int:
 
 
 # One test that uses our fixture
-def test_0079_square(initial_value: int):
+def test_0243_FXT_square(initial_value: int):
     """Doc"""
     result = square(initial_value)
     assert result == initial_value**2

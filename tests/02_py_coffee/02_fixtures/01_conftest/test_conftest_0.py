@@ -8,7 +8,7 @@ def square(num: int) -> int:
 
 
 # One test that uses our fixture
-def test_0084_square(initial_value: int) -> None:
+def test_0252_CNF_square(initial_value: int) -> None:
     """Doc"""
     result = square(initial_value)
     assert result == initial_value**2

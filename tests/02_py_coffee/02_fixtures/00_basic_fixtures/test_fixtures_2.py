@@ -24,14 +24,14 @@ def cube(num: int) -> int:
 
 
 # One test that uses our fixture
-def test_0079_square(initial_value: int):
+def test_0244_FXT_square(initial_value: int):
     """Doc"""
     result = square(initial_value)
     assert result == initial_value**2
 
 
 # One test that uses our fixture
-def test_0080_cube(initial_value: int):
+def test_0245_FXT_cube(initial_value: int):
     """Doc"""
     result = cube(initial_value)
     assert result == initial_value**3

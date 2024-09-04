@@ -1,6 +1,5 @@
 """A simple example of test fixtures"""
 
-
 import pytest
 
 
@@ -17,7 +16,7 @@ def square(num: int) -> int:
 
 
 # One test that uses our fixture
-def test_0078_square(initial_value: int) -> None:
+def test_0240_FXT_square(initial_value: int) -> None:
     """Doc"""
     result = square(initial_value)
     assert result == initial_value**2
