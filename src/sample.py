@@ -2,5 +2,5 @@
 
 
 def add(a: int, b: int) -> int:
-    """basic function"""
+    # a basic function but this is an input -> function -> output mechanism that can be as complex as one wants.
     return a + b

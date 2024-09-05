@@ -1,4 +1,7 @@
 {
+   "editor.tokenColorCustomizations": {
+      "comments": "#459a10"
+   },
    "window.zoomLevel": 2.0,
    "editor.fontSize": 18,
    "editor.lineHeight": 25,
@@ -96,9 +99,6 @@
          "italic": false
       }
    ],
-   "editor.tokenColorCustomizations": {
-      "comments": "#d4922f"
-   },
    "[html]": {
       "editor.defaultFormatter": "vscode.html-language-features"
    },
