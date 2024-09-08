@@ -1,8 +1,9 @@
 """docstring"""
+
 from datetime import datetime
 
 import pytest
-from tut7.myapp.student import Student
+from .student import Student
 
 
 @pytest.fixture

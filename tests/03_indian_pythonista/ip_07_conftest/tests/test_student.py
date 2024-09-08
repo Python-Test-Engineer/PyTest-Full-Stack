@@ -1,9 +1,9 @@
 """Test"""
 
-from tut7.myapp.student import get_topper
+from .student import get_topper
 
 
-def test_0108_get_topper(make_dummy_student):
+def test_1109_get_topper(make_dummy_student):
     """docstring"""
     students = [
         make_dummy_student("ram", 21),

@@ -3,10 +3,10 @@
 import json
 import os
 
-from tut5.myapp.sample import save_dict
+from .sample import save_dict
 
 
-def test_0105_save_dict(tmpdir, capsys):
+def test_1105_save_dict(tmpdir, capsys):
     """docstring"""
     filepath = os.path.join(tmpdir, "test.json")
     _dict = {"a": 1, "b": 2}
