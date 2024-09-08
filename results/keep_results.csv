@@ -1,0 +1,16 @@
+0001|test_0001_pass|tests/00_check_setup/test_01_setup.py::test_0001_pass|PASSED|1.000341|
+0002|test_0002_xfail|tests/00_check_setup/test_01_setup.py::test_0002_xfail|X-FAILED PASSED|0.000146|xfail
+0003|test_0003_xpass|tests/00_check_setup/test_01_setup.py::test_0003_xpass|X-PASSED|9.9e-05|xfail
+0004|test_0004_fail|tests/00_check_setup/test_01_setup.py::test_0004_fail|FAILED|0.000124|
+0005|test_0005_many_markers|tests/00_check_setup/test_01_setup.py::test_0005_many_markers|PASSED|9.8e-05|inner-setup-outer
+0006|test_0006_case01|tests/00_check_setup/test_01_setup.py::test_0006_case01|PASSED|0.000178|
+0233|test_0233_xpass|tests/00_check_setup/test_01_setup.py::test_0233_xpass|X-PASSED|0.00014|xfail
+0234|test_0234_xpass|tests/00_check_setup/test_01_setup.py::test_0234_xpass|PASSED|0.000106|
+0236|test_0236_fail|tests/00_check_setup/test_01_setup.py::test_0236_fail|FAILED|0.000261|
+900|test_900_get_version|tests/00_check_setup/test_02_config.py::test_900_get_version|PASSED|0.000119|
+0008|test_0008_a1|tests/00_check_setup/test_03_logging.py::test_0008_a1|PASSED|0.000245|
+0009|test_0009_a2|tests/00_check_setup/test_03_logging.py::test_0009_a2|PASSED|2.000563|
+0010|test_0010_case01|tests/00_check_setup/test_03_logging.py::test_0010_case01|PASSED|0.00023|sanity
+0011|test_0011_case03|tests/00_check_setup/test_03_logging.py::test_0011_case03|X-FAILED PASSED|0.000752|xfail-sanity
+0012|test_0012_add_num|tests/00_check_setup/test_04_src.py::test_0012_add_num|PASSED|9.8e-05|
+0013|test_0013_add_num|tests/00_check_setup/test_04_src.py::TestSample::test_0013_add_num|PASSED|0.000102|

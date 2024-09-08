@@ -1,0 +1,11 @@
+rest:
+  url: "https://example.com/"
+  port: 3001
+
+dev:
+  url: "https://dev.com/"
+  port: 3010
+
+prod:
+  url: "https://prod.com/"
+  port: 2007
