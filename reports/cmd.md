@@ -1,3 +1,5 @@
-For a self-contained report with css and images in one file:
+## HTML Report
 
---html=reports/report.html --self-contained-html
+For a self-contained pytest-html report with css and images in one file:
+
+`python -m pytest --html=reports/report.html --self-contained-html`
