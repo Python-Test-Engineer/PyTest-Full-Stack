@@ -1,5 +1,5 @@
 import pytest
-from tut4.myapp.sample import add
+from .sample import add
 
 
 def test_0100_add_num():
@@ -21,8 +21,3 @@ def test_0102_add_list():
 )
 def test_0103_add(a, b, c):
     assert add(a, b) == c
-
-
-@pytest.mark.xfail
-def test_0333_add_xpass(a, b, c):
-    assert True
