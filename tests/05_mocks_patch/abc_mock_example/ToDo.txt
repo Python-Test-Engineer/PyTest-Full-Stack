@@ -1,3 +1,0 @@
-x Can call AddExecuter
-x AddExecuter calls AbstractAdder properly and returns correct
-  result
