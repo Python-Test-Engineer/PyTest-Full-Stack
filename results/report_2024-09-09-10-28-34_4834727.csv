@@ -1,0 +1,22 @@
+0001|test_0001_SET_pass|tests/00_check_setup/test_01_setup.py::test_0001_SET_pass|PASSED|1.012589|
+0002|test_0002_SET_xfail|tests/00_check_setup/test_01_setup.py::test_0002_SET_xfail|X-FAILED PASSED|0.001131|xfail
+0003|test_0003_SET_xpass|tests/00_check_setup/test_01_setup.py::test_0003_SET_xpass|X-PASSED|0.000159|xfail
+0004|test_0004_SET_this_will_fail|tests/00_check_setup/test_01_setup.py::test_0004_SET_this_will_fail|FAILED|0.00076|
+0005|test_0005_SET_many_markers|tests/00_check_setup/test_01_setup.py::test_0005_SET_many_markers|PASSED|0.000165|inner-setup-outer
+0006|test_0006_SET_case01|tests/00_check_setup/test_01_setup.py::test_0006_SET_case01|PASSED|0.000625|
+0011|test_0011_SET_get_version|tests/00_check_setup/test_02_config.py::test_0011_SET_get_version|PASSED|0.000646|
+0021|test_0021_SET_a1|tests/00_check_setup/test_03_logging.py::test_0021_SET_a1|PASSED|0.000374|
+0022|test_0022_SET_a2|tests/00_check_setup/test_03_logging.py::test_0022_SET_a2|PASSED|2.001285|
+0024|test_0024_SET_case03_xfail|tests/00_check_setup/test_03_logging.py::test_0024_SET_case03_xfail|X-FAILED PASSED|0.001973|xfail-sanity
+0031|test_0031_SET_add_num|tests/00_check_setup/test_04_src.py::TestSample::test_0031_SET_add_num|PASSED|0.000631|
+0032|test_0032_SET_add_num_will_fail|tests/00_check_setup/test_04_src.py::TestSample::test_0032_SET_add_num_will_fail|FAILED|0.003864|
+0040|test_0040_SET_open|tests/00_check_setup/test_05_mock.py::test_0040_SET_open|PASSED|0.003568|
+0041|test_0041_open2|tests/00_check_setup/test_05_mock.py::test_0041_open2|PASSED|0.000627|
+0100|test_0100_SQL_db_column_type|tests/01_inspect/test_db_schema_sqlmodel.py::test_0100_SQL_db_column_type|PASSED|0.004775|
+0101|test_0101_SQL_db_artist_has_no_fk|tests/01_inspect/test_db_schema_sqlmodel.py::test_0101_SQL_db_artist_has_no_fk|PASSED|0.004231|
+0102|test_0102_SQL_db_track_has_fk|tests/01_inspect/test_db_schema_sqlmodel.py::test_0102_SQL_db_track_has_fk|PASSED|0.001494|
+0103|test_0103_SQL_db_nullables|tests/01_inspect/test_db_schema_sqlmodel.py::test_0103_SQL_db_nullables|PASSED|0.000475|
+0104|test_0104_SQL_db_primary_key|tests/01_inspect/test_db_schema_sqlmodel.py::test_0104_SQL_db_primary_key|PASSED|0.000388|
+0105|test_0105_SQL_db_default|tests/01_inspect/test_db_schema_sqlmodel.py::test_0105_SQL_db_default|PASSED|0.000444|
+0106|test_0106_SQL_db_unique|tests/01_inspect/test_db_schema_sqlmodel.py::test_0106_SQL_db_unique|PASSED|0.000264|
+0107|test_0107_SQL_db_check_constraint|tests/01_inspect/test_db_schema_sqlmodel.py::test_0107_SQL_db_check_constraint|X-FAILED PASSED|0.001258|xfail

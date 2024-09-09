@@ -33,6 +33,7 @@ def test_0004_SET_this_will_fail():
 
 
 # A test to show we can have many markers and their order
+@pytest.mark.sanity
 @pytest.mark.outer
 @pytest.mark.setup
 @pytest.mark.inner
@@ -43,6 +44,7 @@ def test_0005_SET_many_markers():
 
 
 # A test using pytest.raises
+@pytest.mark.sanity
 def test_0006_SET_case01():
     console.print("[dark_orange bold]Example [/]")
     with pytest.raises(ZeroDivisionError):
@@ -50,6 +52,7 @@ def test_0006_SET_case01():
 
 
 # A test with skip and optional reason
+@pytest.mark.sanity
 @pytest.mark.skip(reason="data not ready")
 def test_0007_SET_skip():
     assert True
