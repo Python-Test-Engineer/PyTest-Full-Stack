@@ -1,3 +1,0 @@
-0005|test_0005_SET_many_markers|tests/00_check_setup/test_01_setup.py::test_0005_SET_many_markers|PASSED|0.000188|inner-setup-outer-sanity
-0006|test_0006_SET_case01|tests/00_check_setup/test_01_setup.py::test_0006_SET_case01|PASSED|0.002404|sanity
-0024|test_0024_SET_case03_xfail|tests/00_check_setup/test_03_logging.py::test_0024_SET_case03_xfail|X-FAILED PASSED|0.00233|xfail-sanity

@@ -1,6 +1,0 @@
-0001|test_0001_SET_pass|tests/00_check_setup/test_01_setup.py::test_0001_SET_pass|PASSED|1.01225|
-0002|test_0002_SET_xfail|tests/00_check_setup/test_01_setup.py::test_0002_SET_xfail|X-FAILED PASSED|0.001021|xfail
-0003|test_0003_SET_xpass|tests/00_check_setup/test_01_setup.py::test_0003_SET_xpass|X-PASSED|0.000208|xfail
-0004|test_0004_SET_this_will_fail|tests/00_check_setup/test_01_setup.py::test_0004_SET_this_will_fail|FAILED|0.001125|
-0005|test_0005_SET_many_markers|tests/00_check_setup/test_01_setup.py::test_0005_SET_many_markers|PASSED|0.000243|inner-setup-outer
-0006|test_0006_SET_case01|tests/00_check_setup/test_01_setup.py::test_0006_SET_case01|PASSED|0.00086|
