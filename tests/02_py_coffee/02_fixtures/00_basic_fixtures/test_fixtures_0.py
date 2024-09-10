@@ -2,12 +2,15 @@
 
 from random import randint
 import pytest
+from rich.console import Console
+
+console = Console()
 
 
 # A simple fixture that generates some inputs
 @pytest.fixture
 def initial_value():
-    print(randint(10000, 99999))
+    console.print(f"\n[dark_orange]initial_value fixture {randint(10000, 99999)}[/]")
     return 5
 
 

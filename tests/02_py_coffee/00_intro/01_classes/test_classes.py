@@ -14,7 +14,7 @@ def cube(num: int) -> int:
 
 
 # Our class containing our tests as methods
-# Note: Must start with `Test`
+# Note: Must start with `Test` even if tests start with test_ unless this is changed in pytest.ini
 class TestClass:
     """Doc"""
 

@@ -2,13 +2,18 @@
 
 from random import randint
 import pytest
+from rich.console import Console
+
+console = Console()
 
 
 # Change scope to function to see difference
 @pytest.fixture(scope="module")
 def initial_value() -> int:
-    print(randint(10000, 99999))
-    print("Generating an initial value!")
+    console.print(
+        f"\n[dark_orange]Generating an initial value! {randint(10000, 99999)}[/]"
+    )
+
     return 5
 
 
