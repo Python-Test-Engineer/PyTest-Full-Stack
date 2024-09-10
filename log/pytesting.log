@@ -1,7 +1,0 @@
-<<<<<<< HEAD
-=======
-2024-09-09 17:05:07 [    INFO] [test_03_logging] test_a1 (test_03_logging.py:13)
-2024-09-09 17:05:09 [    INFO] [test_03_logging] test_a2 (test_03_logging.py:19)
-2024-09-09 17:05:09 [   ERROR] [test_03_logging] test_case03 xfail (test_03_logging.py:33)
-2024-09-09 17:05:09 [   ERROR] [test_03_logging] func1 ValueError (test_03_logging.py:25)
->>>>>>> 77466f552581a419c9ede75f5154dc6a232b4cb4

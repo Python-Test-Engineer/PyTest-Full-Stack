@@ -10,9 +10,9 @@ def square(num: int) -> int:
 
 
 # A single test marked with xfail (we expect the test to fail)
+# If a test should be marked as xfail and reported as such but should not be even executed, use the run parameter as False
 @pytest.mark.xfail(run=False)
 def test_0227_XFL_square() -> None:
-    """If a test should be marked as xfail and reported as such but should not be even executed, use the run parameter as False"""
     num = 5
     result = square(num)
     assert result == num**2

@@ -1,16 +1,17 @@
 """A simple example of test fixtures"""
 
+from random import randint
 import pytest
 
 
 # A simple fixture that generates some inputs
 @pytest.fixture
 def initial_value():
-    """Doc"""
+    print(randint(10000, 99999))
     return 5
 
 
-# A simple fixture that logs a test is starting
+# autouse=True will run the fixture before every test without needing to be called
 @pytest.fixture(autouse=True)
 def log_start():
     """Doc"""

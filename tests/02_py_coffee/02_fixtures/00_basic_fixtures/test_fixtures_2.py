@@ -1,29 +1,28 @@
 """A simple example of test fixtures"""
 
+from random import randint
 import pytest
 
 
-# A simple fixture that generates some inputs
+# Change scope to function to see difference
 @pytest.fixture(scope="module")
 def initial_value() -> int:
-    """Doc"""
+    print(randint(10000, 99999))
     print("Generating an initial value!")
     return 5
 
 
-# Simple function that squares a number
 def square(num: int) -> int:
     """Doc"""
     return num * num
 
 
-# Simple function that squares a number
 def cube(num: int) -> int:
     """Doc"""
     return square(num) * num
 
 
-# One test that uses our fixture
+# initial_value is a fixture that is called once when scope=module but every test if scope=function (default)
 def test_0244_FXT_square(initial_value: int):
     """Doc"""
     result = square(initial_value)
