@@ -6,8 +6,8 @@ from src.sample import add
 
 console = Console()
 
-#
 
+# Both class and def must follow naming conventions as specified in pytest.ini
 class TestSample:
     """Class based est"""
 
