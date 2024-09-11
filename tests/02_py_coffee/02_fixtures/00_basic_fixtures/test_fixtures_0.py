@@ -6,8 +6,6 @@ from rich.console import Console
 
 console = Console()
 
-
-# A simple fixture that generates some inputs
 @pytest.fixture
 def initial_value():
     console.print(f"\n[dark_orange]initial_value fixture {randint(10000, 99999)}[/]")
