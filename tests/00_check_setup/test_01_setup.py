@@ -61,3 +61,12 @@ def test_0007_SET_skip():
 # Raise a ValueError
 def func1():
     raise ValueError("EXPECTED IndexError func1 raised")
+
+
+@pytest.mark.parametrize("n, expected", [(1, 2), (3, 4)])
+class TestClassSetup:
+    def test_0008_SET_simple_case(self, n, expected):
+        assert n + 1 == expected
+
+    def test_0009_SET_eird_simple_case(self, n, expected):
+        assert (n * 1) + 1 == expected
