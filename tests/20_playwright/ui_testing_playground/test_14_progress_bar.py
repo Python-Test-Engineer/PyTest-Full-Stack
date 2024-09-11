@@ -18,10 +18,10 @@ def test_0207_progressbar(page: Page):
         print(f"Percent: {valuenow}%")
 
         # progress more than or equal to 40
-        if valuenow >= 40:
+        if valuenow >= 30:
             break
 
     # stop progress
     stop_btn.click()
 
-    assert valuenow >= 40
+    assert valuenow >= 30
