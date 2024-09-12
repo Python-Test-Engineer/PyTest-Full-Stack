@@ -1,4 +1,4 @@
-import dev_module as module_name
+import mytests as module_name
 
 
 all_funcs = dir(module_name)
