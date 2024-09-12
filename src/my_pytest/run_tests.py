@@ -7,7 +7,7 @@ console = Console()
 
 all_funcs = dir(module_name)
 console.print(all_funcs)
-function_names = [func for func in all_funcs if func.startswith("test_")]
+function_names = [func for func in all_funcs if func.startswith("my_test_")]
 console.print(function_names)
 
 

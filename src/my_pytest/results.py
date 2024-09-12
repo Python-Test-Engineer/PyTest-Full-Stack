@@ -25,7 +25,8 @@ class Results:
         self.test_results.append(result)
 
     def get_results(self):
-        return self.test_results
+        sorted_results = sorted(self.test_results, key=lambda k: k["test_name"].lower())
+        return sorted_results
 
     def get_result_totals(self):
         num_tests = len(self.test_results)
