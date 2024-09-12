@@ -25,4 +25,4 @@ for test_name, func in function_dict.items():
     print(f"\nCalling function: {test_name}")
     func()
 
-console.print(f"Results: {r.get_results()}")
+console.print(f"Results:\n {r.get_results()}")
