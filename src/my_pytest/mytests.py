@@ -37,7 +37,6 @@ def test_mul():
 
 def test_mul_fail():
     actual_result = mul(4, 2) + 1  # simulate error
-    expected_result = 3
     expected_result = 8
     print(f"Actual result: {actual_result} - Expected result: {expected_result}")
     color_result(actual_result, expected_result)
