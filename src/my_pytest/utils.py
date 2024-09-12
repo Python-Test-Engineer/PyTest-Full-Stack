@@ -18,10 +18,14 @@ def store_result(test_name, actual_result, expected_result, test_message=None):
             actual_result == expected_result
         ), f"Actual result should be {expected_result}"
         r.add_result(
-            {"test_name": test_name, "result": "PASSED", "test_message": test_message}
+            {
+                "test_name": test_name,
+                "test_result": "PASSED",
+                "test_message": test_message,
+            }
         )
     except Exception as e:
         r.add_result(
-            {"test_name": test_name, "result": "FAILED", "test_message": str(e)}
+            {"test_name": test_name, "test_result": "FAILED", "test_message": str(e)}
         )
         print(e)

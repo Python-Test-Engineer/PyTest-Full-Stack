@@ -27,3 +27,6 @@ for test_name, func in function_dict.items():
 
 console.print("[dark_orange]Test results[/]")
 console.print(r.get_results())
+console.print("[green]===================================[/]")
+r.get_result_totals()
+console.print("[green]===================================[/]")
