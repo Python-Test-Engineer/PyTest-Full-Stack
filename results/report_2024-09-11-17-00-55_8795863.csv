@@ -1,4 +1,0 @@
-0008|test_0008_SET_simple_case[1-2]|tests/00_check_setup/test_01_setup.py::TestClassSetup::test_0008_SET_simple_case[1-2]|PASSED|0.000112|
-0008|test_0008_SET_simple_case[3-4]|tests/00_check_setup/test_01_setup.py::TestClassSetup::test_0008_SET_simple_case[3-4]|PASSED|9.1e-05|
-0009|test_0009_SET_eird_simple_case[1-2]|tests/00_check_setup/test_01_setup.py::TestClassSetup::test_0009_SET_eird_simple_case[1-2]|PASSED|0.00016|
-0009|test_0009_SET_eird_simple_case[3-4]|tests/00_check_setup/test_01_setup.py::TestClassSetup::test_0009_SET_eird_simple_case[3-4]|PASSED|0.00028|
