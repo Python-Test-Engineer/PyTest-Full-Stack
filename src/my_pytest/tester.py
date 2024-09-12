@@ -17,7 +17,6 @@ for func_name in function_names:
 
 print(function_dict)
 # # Now you can access and call the functions using the dictionary
-for func_name, func in function_dict.items():
-    print(f"\nCalling function: {func_name}")
-    actual_result = func()
-    print(f"Actual result: {actual_result}")
+for test_name, func in function_dict.items():
+    print(f"\nCalling function: {test_name}")
+    func()
