@@ -9,7 +9,16 @@ console = Console()
 
 # Both class and def must follow naming conventions as specified in pytest.ini
 class TestSample:
-    """Class based est"""
+    # we can define setup and teardown methods as well
+
+    def setup_method(self, method):
+        console.print(f"\n[dark_orange italic]Running setup for {method.__name__}[/]")
+
+    def teardown_method(self, method):
+
+        console.print(
+            f"\n[dark_orange italic]Running teardown for {method.__name__}[/]"
+        )
 
     def test_0031_SET_add_num(self):
         """fn test in a class"""
