@@ -20,7 +20,7 @@ def test_add():
 
 
 def test_add_fail():
-    actual_result = add(1, 2) + 1
+    actual_result = add(1, 2) + 1  # simulate error
     expected_result = 3
     print(f"Actual result: {actual_result} - Expected result: {expected_result}")
     color_result(actual_result, expected_result)
@@ -36,7 +36,8 @@ def test_mul():
 
 
 def test_mul_fail():
-    actual_result = mul(4, 2) + 1
+    actual_result = mul(4, 2) + 1  # simulate error
+    expected_result = 3
     expected_result = 8
     print(f"Actual result: {actual_result} - Expected result: {expected_result}")
     color_result(actual_result, expected_result)
@@ -52,7 +53,7 @@ def test_sub():
 
 
 def test_sub_fail():
-    actual_result = sub(11, 2) + 1
+    actual_result = sub(11, 2) + 1  # simulate error
     expected_result = 9
     print(f"Actual result: {actual_result} - Expected result: {expected_result}")
     color_result(actual_result, expected_result)
