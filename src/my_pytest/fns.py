@@ -5,9 +5,14 @@ def add(a, b):
 def mul(a, b):
     return a * b
 
+
 def sub(a, b):
-    return a - b    
+    return a - b
+
 
 def div(a, b):
-    
-    return a / b
+
+    try:
+        return a / b
+    except ZeroDivisionError:
+        print("Zero Division Error")
