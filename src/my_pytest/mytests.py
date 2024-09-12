@@ -1,6 +1,5 @@
-def test_func1():
-    print("Function 1 called")
-    return 1
+def test_add():
+    print("Test add called")
 
 
 def test_func2():
