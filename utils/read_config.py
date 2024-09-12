@@ -3,8 +3,8 @@
 import configparser
 from pathlib import Path
 
-CG_FILE = "config.ini"
 CG_FILE_DIR = "config"
+CG_FILE = "config.ini"
 
 
 config = configparser.ConfigParser()
@@ -25,5 +25,7 @@ def get_version():
     return config["framework"]["version"]
 
 
-# print(f"PET API: {get_pet_api_url()}")
-# print(f"VERSION: {get_version()}")
+if __name__ == "__main__":
+
+    print(f"PET API: {get_pet_api_url()}")
+    print(f"VERSION: {get_version()}")
