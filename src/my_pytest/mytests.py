@@ -73,3 +73,30 @@ def my_test_42_div_fail():
     print(f"Actual result: {actual_result} - Expected result: {expected_result}")
     color_result(actual_result, expected_result)
     store_result(sys._getframe().f_code.co_name, actual_result, expected_result)
+
+
+class MyTestSample:
+    # we can define setup and teardown methods as well
+
+    def setup_method(self, method):
+        console.print(f"\n[dark_orange italic]Running setup for {method.__name__}[/]")
+
+    def teardown_method(self, method):
+
+        console.print(
+            f"\n[dark_orange italic]Running teardown for {method.__name__}[/]"
+        )
+
+    def my_test_50(self):
+        console.print("[green italic]Example of PASSED test[/]✅")
+        assert add(1, 2) == 3
+
+    def my_test_51_will_fail(self):
+        """failing fn test in a class"""
+        console.print("[red italic]Example of failed test[/]❌")
+        assert add(1, 2) == 5
+
+
+if __name__ == "__main__":
+    t = MyTestSample()
+    t.my_test_50()
