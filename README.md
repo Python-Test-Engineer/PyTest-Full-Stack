@@ -10,6 +10,6 @@
 
 Please visit [PyTest Cookbook](https://pytest-cookbook.com/) for more details.
 
-There are many Command Line options to sort by test_id, test_name, asc, desc, by folders and to randomise. See[PyTest Cookbook](https://pytest-cookbook.com/).
+There are many Command Line options to sort by test_id, test_name, asc, desc, by folders and to randomise. See [PyTest Cookbook](https://pytest-cookbook.com/).
 
 
