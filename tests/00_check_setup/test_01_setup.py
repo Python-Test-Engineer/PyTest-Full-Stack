@@ -29,7 +29,7 @@ def test_0003_SET_xpass():
 # A test fail to show as an example
 def test_0004_SET_this_will_fail():
     console.print("[red italic]Example of a failed test[/]⚠️")
-    assert False
+    assert 3 * 2 == 5
 
 
 # A test to show we can have many markers and their order
