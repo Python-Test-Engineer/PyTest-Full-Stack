@@ -67,6 +67,3 @@ def func1():
 class TestClassSetup:
     def test_0008_SET_simple_case(self, n, expected):
         assert n + 1 == expected
-
-    def test_0009_SET_eird_simple_case(self, n, expected):
-        assert (n * 1) + 1 == expected
