@@ -1,0 +1,11 @@
+0220|test_0220_XFL_square|tests/02_py_coffee/01_marks/01_xfail/test_xfail_0.py::test_0220_XFL_square|X-FAILED PASSED|0.000437|xfail
+0221|test_0221_XFL_square|tests/02_py_coffee/01_marks/01_xfail/test_xfail_1.py::test_0221_XFL_square|FAILED|0.00018|
+0223|test_0223_XFL_square|tests/02_py_coffee/01_marks/01_xfail/test_xfail_2.py::test_0223_XFL_square|X-FAILED PASSED|0.00022|xfail
+0224|test_0224_XFL_square|tests/02_py_coffee/01_marks/01_xfail/test_xfail_3.py::test_0224_XFL_square|X-FAILED PASSED|0.000188|xfail
+0225|test_0225_XFL_square|tests/02_py_coffee/01_marks/01_xfail/test_xfail_4.py::test_0225_XFL_square|X-FAILED PASSED|0.000184|xfail
+0164|test_0164_delete_delete_pet_by_id|tests/10_py_api_pets/test_pets.py::test_0164_delete_delete_pet_by_id|FAILED|0.415588|
+0170|test_0170_users_api[chromium]|tests/20_playwright/api/test_01_api.py::test_0170_users_api[chromium]|PASSED|3.264729|
+0187|test_0187_get_started_link[chromium]|tests/20_playwright/general/test_03_test_attribute.py::test_0187_get_started_link[chromium]|PASSED|0.807989|
+0204|test_0204_click[chromium]|tests/20_playwright/ui_testing_playground/test_11__click.py::test_0204_click[chromium]|PASSED|0.795461|
+0208|test_0208_visibility[chromium]|tests/20_playwright/ui_testing_playground/test_15_visibility.py::test_0208_visibility[chromium]|PASSED|2.86499|
+0172|test_0172_users_search|tests/20_playwright/api/test_03_user_search.py::test_0172_users_search|PASSED|0.358674|

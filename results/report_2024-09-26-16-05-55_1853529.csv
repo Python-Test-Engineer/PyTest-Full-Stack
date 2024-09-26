@@ -1,0 +1,9 @@
+0001|test_0001_SET_pass|tests/00_check_setup/test_01_setup.py::test_0001_SET_pass|PASSED|1.005133|
+0002|test_0002_SET_xfail|tests/00_check_setup/test_01_setup.py::test_0002_SET_xfail|X-FAILED PASSED|0.000328|xfail
+0003|test_0003_SET_xpass|tests/00_check_setup/test_01_setup.py::test_0003_SET_xpass|X-PASSED|0.0001|xfail
+0004|test_0004_SET_this_will_fail|tests/00_check_setup/test_01_setup.py::test_0004_SET_this_will_fail|FAILED|0.000733|
+0005|test_0005_SET_many_markers|tests/00_check_setup/test_01_setup.py::test_0005_SET_many_markers|PASSED|0.000127|inner-setup-outer-sanity
+0188|test_0188_app[chromium]|tests/20_playwright/general/test_06_checkbox.py::test_0188_app[chromium]|PASSED|4.395618|
+0189|test_0189_app[chromium]|tests/20_playwright/general/test_07_option_menu.py::test_0189_app[chromium]|PASSED|1.270553|
+0211|test_0211_failed_login[chromium]|tests/20_playwright/ui_testing_playground/test_16_sample_app.py::test_0211_failed_login[chromium]|PASSED|0.190051|
+504|test_deposit_504_into_account[100-20-120]|tests/50_pwe_bdd/tests/step_definitions/test_02_bank_transactions_scenario_outline.py::test_deposit_504_into_account[100-20-120]|PASSED|0.005431|usefixtures-parametrize-deposit-banking

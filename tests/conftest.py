@@ -1,3 +1,4 @@
+import multiprocessing
 import os
 import sys
 import random
@@ -42,7 +43,8 @@ def pytest_addoption(parser):
 # ----- GLOBAL VALUES -----
 def pytest_configure(config):
 
-    config.my_global_value = "✅ MY GLOBLAL VALUE ✅"
+    num_cores = multiprocessing.cpu_count()
+    config.my_global_value = f"✅ You have {num_cores} cores ✅"
 
 
 # A pytest hook to for modifying collected items
