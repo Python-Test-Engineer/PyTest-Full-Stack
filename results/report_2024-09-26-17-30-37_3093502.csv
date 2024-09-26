@@ -1,0 +1,8 @@
+0100|test_0100_SQL_db_column_type|tests/01_inspect/test_db_schema_sqlmodel.py::test_0100_SQL_db_column_type|PASSED|0.002352|
+0101|test_0101_SQL_db_artist_has_no_fk|tests/01_inspect/test_db_schema_sqlmodel.py::test_0101_SQL_db_artist_has_no_fk|PASSED|0.034723|
+0102|test_0102_SQL_db_track_has_fk|tests/01_inspect/test_db_schema_sqlmodel.py::test_0102_SQL_db_track_has_fk|PASSED|0.003175|
+0103|test_0103_SQL_db_nullables|tests/01_inspect/test_db_schema_sqlmodel.py::test_0103_SQL_db_nullables|PASSED|0.000437|
+0104|test_0104_SQL_db_primary_key|tests/01_inspect/test_db_schema_sqlmodel.py::test_0104_SQL_db_primary_key|PASSED|0.000391|
+0105|test_0105_SQL_db_default|tests/01_inspect/test_db_schema_sqlmodel.py::test_0105_SQL_db_default|PASSED|0.000819|
+0106|test_0106_SQL_db_unique|tests/01_inspect/test_db_schema_sqlmodel.py::test_0106_SQL_db_unique|PASSED|0.000275|
+0107|test_0107_SQL_db_check_constraint|tests/01_inspect/test_db_schema_sqlmodel.py::test_0107_SQL_db_check_constraint|X-FAILED PASSED|0.001376|xfail
