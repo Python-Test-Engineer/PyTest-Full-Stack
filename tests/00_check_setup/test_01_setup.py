@@ -52,18 +52,25 @@ def test_0006_SET_case01():
 
 
 # A test with skip and optional reason
-@pytest.mark.sanity
 @pytest.mark.skip(reason="data not ready")
 def test_0007_SET_skip():
     assert True
 
 
 # Raise a ValueError
-def func1():
-    raise ValueError("EXPECTED IndexError func1 raised")
+
+
+def myfunc():
+    print("\n\tmyfunc ValueError")
+    raise ValueError("Exception 123 raised")
+
+
+def test_0008_SET_match_raises():
+    with pytest.raises(ValueError, match=r".* 123 .*"):
+        myfunc()
 
 
 @pytest.mark.parametrize("n, expected", [(1, 2), (3, 4)])
 class TestClassSetup:
-    def test_0008_SET_simple_case(self, n, expected):
+    def test_0009_SET_simple_case(self, n, expected):
         assert n + 1 == expected
