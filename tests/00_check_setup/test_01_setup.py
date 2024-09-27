@@ -58,8 +58,6 @@ def test_0007_SET_skip():
 
 
 # Raise a ValueError
-
-
 def myfunc():
     print("\n\tmyfunc ValueError")
     raise ValueError("Exception 123 raised")
