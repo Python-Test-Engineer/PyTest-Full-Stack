@@ -1,0 +1,12 @@
+0107|test_0107_SQL_db_check_constraint|tests/01_inspect/test_db_schema_sqlmodel.py::test_0107_SQL_db_check_constraint|X-FAILED PASSED|0.011381|xfail
+0201|test_0201_GEN_quare|tests/02_py_coffee/00_intro/00_functions/test_functions.py::test_0201_GEN_quare|PASSED|0.00021|
+0202|test_0202_GEN_1_cube|tests/02_py_coffee/00_intro/00_functions/test_functions.py::test_0202_GEN_1_cube|PASSED|0.000194|
+0203|test_0203_GEN_square|tests/02_py_coffee/00_intro/01_classes/test_classes.py::TestClass::test_0203_GEN_square|PASSED|0.000204|
+0204|test_0204_GEN_cube|tests/02_py_coffee/00_intro/01_classes/test_classes.py::TestClass::test_0204_GEN_cube|PASSED|0.000123|
+0161|test_0161_post_pet|tests/10_py_api_pets/test_pets.py::test_0161_post_pet|PASSED|0.536307|
+0164|test_0164_delete_delete_pet_by_id|tests/10_py_api_pets/test_pets.py::test_0164_delete_delete_pet_by_id|PASSED|0.458839|
+0186|test_0186_get_started_link[chromium]|tests/20_playwright/general/test_02_text.py::test_0186_get_started_link[chromium]|PASSED|4.167522|
+successful|test_successful_login[chromium]|tests/20_playwright/page_object_model/test_02_app.py::test_successful_login[chromium]|PASSED|0.890569|
+0210|test_0210_successful_login[chromium]|tests/20_playwright/ui_testing_playground/test_16_sample_app.py::test_0210_successful_login[chromium]|PASSED|0.154409|
+0172|test_0172_users_search|tests/20_playwright/api/test_03_user_search.py::test_0172_users_search|PASSED|0.459909|
+504|test_deposit_504_into_account[100-20-120]|tests/50_pwe_bdd/tests/step_definitions/test_02_bank_transactions_scenario_outline.py::test_deposit_504_into_account[100-20-120]|PASSED|0.003016|usefixtures-parametrize-deposit-banking

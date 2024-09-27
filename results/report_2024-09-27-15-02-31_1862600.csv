@@ -1,0 +1,9 @@
+0001|test_0001_SET_pass|tests/00_check_setup/test_01_setup.py::test_0001_SET_pass|PASSED|1.007352|
+0002|test_0002_SET_xfail|tests/00_check_setup/test_01_setup.py::test_0002_SET_xfail|X-FAILED PASSED|0.000316|xfail
+0003|test_0003_SET_xpass|tests/00_check_setup/test_01_setup.py::test_0003_SET_xpass|X-PASSED|0.000329|xfail
+0004|test_0004_SET_this_will_fail|tests/00_check_setup/test_01_setup.py::test_0004_SET_this_will_fail|FAILED|0.001589|
+0005|test_0005_SET_many_markers|tests/00_check_setup/test_01_setup.py::test_0005_SET_many_markers|PASSED|0.000269|inner-setup-outer-sanity
+0189|test_0189_app[chromium]|tests/20_playwright/general/test_07_option_menu.py::test_0189_app[chromium]|PASSED|1.552877|
+successful|test_successful_login[chromium]|tests/20_playwright/page_object_model/test_02_app.py::test_successful_login[chromium]|PASSED|1.156889|
+0208|test_0208_visibility[chromium]|tests/20_playwright/ui_testing_playground/test_15_visibility.py::test_0208_visibility[chromium]|PASSED|3.187435|
+0172|test_0172_users_search|tests/20_playwright/api/test_03_user_search.py::test_0172_users_search|PASSED|0.417044|

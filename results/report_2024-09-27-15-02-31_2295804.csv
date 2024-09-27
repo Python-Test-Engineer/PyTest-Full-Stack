@@ -1,0 +1,15 @@
+0107|test_0107_SQL_db_check_constraint|tests/01_inspect/test_db_schema_sqlmodel.py::test_0107_SQL_db_check_constraint|X-FAILED PASSED|0.006163|xfail
+0201|test_0201_GEN_quare|tests/02_py_coffee/00_intro/00_functions/test_functions.py::test_0201_GEN_quare|PASSED|0.000213|
+0202|test_0202_GEN_1_cube|tests/02_py_coffee/00_intro/00_functions/test_functions.py::test_0202_GEN_1_cube|PASSED|0.000188|
+0203|test_0203_GEN_square|tests/02_py_coffee/00_intro/01_classes/test_classes.py::TestClass::test_0203_GEN_square|PASSED|0.000174|
+0204|test_0204_GEN_cube|tests/02_py_coffee/00_intro/01_classes/test_classes.py::TestClass::test_0204_GEN_cube|PASSED|0.000174|
+0162|test_0162_get_pet_by_id|tests/10_py_api_pets/test_pets.py::test_0162_get_pet_by_id|FAILED|0.499876|
+0164|test_0164_delete_delete_pet_by_id|tests/10_py_api_pets/test_pets.py::test_0164_delete_delete_pet_by_id|PASSED|0.462547|
+0186|test_0186_get_started_link[chromium]|tests/20_playwright/general/test_02_text.py::test_0186_get_started_link[chromium]|PASSED|1.388382|
+0188|test_0188_app[chromium]|tests/20_playwright/general/test_06_checkbox.py::test_0188_app[chromium]|PASSED|1.500934|
+0207|test_0207_progressbar[chromium]|tests/20_playwright/ui_testing_playground/test_14_progress_bar.py::test_0207_progressbar[chromium]|PASSED|3.41731|
+0171|test_0171_users_api|tests/20_playwright/api/test_02_api_context.py::test_0171_users_api|PASSED|0.619417|
+504|test_deposit_504_into_account[100-20-120]|tests/50_pwe_bdd/tests/step_definitions/test_02_bank_transactions_scenario_outline.py::test_deposit_504_into_account[100-20-120]|PASSED|0.007892|usefixtures-parametrize-banking-deposit
+504|test_deposit_504_into_account[100-0-100]|tests/50_pwe_bdd/tests/step_definitions/test_02_bank_transactions_scenario_outline.py::test_deposit_504_into_account[100-0-100]|PASSED|0.002004|usefixtures-parametrize-banking-deposit
+501|test_deposit_501_into_account|tests/50_pwe_bdd/tests/step_definitions/test_03_bank_transactions_param.py::test_deposit_501_into_account|PASSED|0.012429|usefixtures-banking-deposit
+502|test_withdraw_502_from_account|tests/50_pwe_bdd/tests/step_definitions/test_03_bank_transactions_param.py::test_withdraw_502_from_account|PASSED|0.002323|usefixtures-withdrawal-banking

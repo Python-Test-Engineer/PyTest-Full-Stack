@@ -1,0 +1,11 @@
+0032|test_0032_SET_add_num_will_fail|tests/00_check_setup/test_04_class_based.py::TestSample::test_0032_SET_add_num_will_fail|FAILED|0.001388|
+0040|test_0040_SET_open|tests/00_check_setup/test_05_mock.py::test_0040_SET_open|PASSED|0.004561|
+0041|test_0041_open2|tests/00_check_setup/test_05_mock.py::test_0041_open2|PASSED|0.000467|
+0100|test_0100_SQL_db_column_type|tests/01_inspect/test_db_schema_sqlmodel.py::test_0100_SQL_db_column_type|PASSED|0.001721|
+0101|test_0101_SQL_db_artist_has_no_fk|tests/01_inspect/test_db_schema_sqlmodel.py::test_0101_SQL_db_artist_has_no_fk|PASSED|0.003918|
+0162|test_0162_get_pet_by_id|tests/10_py_api_pets/test_pets.py::test_0162_get_pet_by_id|PASSED|0.533187|
+0170|test_0170_users_api[chromium]|tests/20_playwright/api/test_01_api.py::test_0170_users_api[chromium]|PASSED|3.103283|
+0187|test_0187_get_started_link[chromium]|tests/20_playwright/general/test_03_test_attribute.py::test_0187_get_started_link[chromium]|PASSED|1.19117|
+0204|test_0204_click[chromium]|tests/20_playwright/ui_testing_playground/test_11__click.py::test_0204_click[chromium]|PASSED|0.859603|
+0213|test_0213_nbsp[chromium]|tests/20_playwright/ui_testing_playground/test_18_nbsp.py::test_0213_nbsp[chromium]|PASSED|2.728885|
+0177|test_0177_remove_user|tests/20_playwright/api/test_04_crud_methods.py::test_0177_remove_user|PASSED|0.362076|
