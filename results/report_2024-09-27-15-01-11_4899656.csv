@@ -1,9 +1,0 @@
-0001|test_0001_SET_pass|tests/00_check_setup/test_01_setup.py::test_0001_SET_pass|PASSED|1.005665|
-0002|test_0002_SET_xfail|tests/00_check_setup/test_01_setup.py::test_0002_SET_xfail|X-FAILED PASSED|0.000282|xfail
-0003|test_0003_SET_xpass|tests/00_check_setup/test_01_setup.py::test_0003_SET_xpass|X-PASSED|0.000129|xfail
-0004|test_0004_SET_this_will_fail|tests/00_check_setup/test_01_setup.py::test_0004_SET_this_will_fail|FAILED|0.000771|
-0005|test_0005_SET_many_markers|tests/00_check_setup/test_01_setup.py::test_0005_SET_many_markers|PASSED|0.000108|inner-setup-outer-sanity
-0188|test_0188_app[chromium]|tests/20_playwright/general/test_06_checkbox.py::test_0188_app[chromium]|PASSED|4.122598|
-0189|test_0189_app[chromium]|tests/20_playwright/general/test_07_option_menu.py::test_0189_app[chromium]|PASSED|1.388507|
-0208|test_0208_visibility[chromium]|tests/20_playwright/ui_testing_playground/test_15_visibility.py::test_0208_visibility[chromium]|PASSED|2.85202|
-500|test_deposit_500_into_account|tests/50_pwe_bdd/tests/step_definitions/test_01_bank_transactions.py::test_deposit_500_into_account|PASSED|0.002605|usefixtures-deposit-banking

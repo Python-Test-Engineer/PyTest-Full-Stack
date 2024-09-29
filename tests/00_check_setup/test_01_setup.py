@@ -3,15 +3,15 @@
 from time import sleep
 import pytest
 from rich.console import Console
+from src.sample import add
 
 console = Console()
 
 
 # A test with console formatting and sleep
 def test_0001_SET_pass():
-    sleep(1)
-    console.print("\n[blue bold]Testing Rich[/]\n")
-    assert True
+    console.print("\n[blue bold]Testing add function...[/]\n")
+    assert add(1, 4) == 5
 
 
 # A test that is expected to fail so xfail will give a 'pass'
@@ -23,6 +23,7 @@ def test_0002_SET_xfail():
 # A test that was expected to fail but passes so is an xpas
 @pytest.mark.xfail
 def test_0003_SET_xpass():
+    sleep(1)
     assert True
 
 

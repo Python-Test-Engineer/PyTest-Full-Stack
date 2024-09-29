@@ -26,5 +26,5 @@ class TestSample:
 
     def test_0032_SET_add_num_will_fail(self):
         """failing fn test in a class"""
-        console.print("[red italic]Example of failed test[/]⚠️")
+        console.print("[yellow]Example of failed test[/]⚠️")
         assert add(1, 2) == 5
