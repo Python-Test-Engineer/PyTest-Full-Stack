@@ -1,6 +1,6 @@
 """Test config"""
 
-from utils.read_config import get_version
+from utils.read_config import get_version, get_pet_api_url
 
 from rich.console import Console
 
@@ -14,5 +14,11 @@ console = Console()
 # get_version() is in utils/read_config.py
 def test_0011_SET_get_version():
     version = get_version()
-    console.print(f"[blue]Version: {version}[/]")
-    assert version
+    console.print(f"\n[yellow]Version: {version}[/]")
+    assert version == "1.0.0"
+
+
+def test_0012_SET_get_vapi_utl():
+    api_url = get_pet_api_url()
+    console.print(f"\n[yellow]API_URL: {api_url}[/]")
+    assert api_url == "https://petstore.swagger.io/v2/pet/"

@@ -10,6 +10,7 @@ LOGGER = logging.getLogger(__name__)
 
 
 def test_0021_SET_a1():
+    sleep(1)
     LOGGER.info("test_a1")
     assert 4 != 3
 
@@ -22,6 +23,7 @@ def test_0022_SET_a2():
 
 def func1():
     """A test"""
+    sleep(1.5)
     LOGGER.error("func1 ValueError")
     raise ValueError("EXPECTED IndexError func1 raised")
 
@@ -30,9 +32,9 @@ def func1():
 @pytest.mark.xfail
 def test_0024_SET_case03_xfail():
     """A test"""
+    sleep(0.5)
     LOGGER.error("test_case03 xfail")
     with pytest.raises(Exception) as excinfo:
-        # assert (1,2,3) == (1,2,4)
         func1()
     print(str(excinfo))
     assert (str(excinfo.value)) == "Exception func1 raised"
