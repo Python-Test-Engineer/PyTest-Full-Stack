@@ -35,10 +35,3 @@ def test_0054_SET_xdist_04():
     for _ in range(num):
         pass
     assert True
-
-
-# with n=2 takes 1.25s
-# def test_0059_SET_xdist_09():
-#     for _ in range(1):
-#         pass
-#     assert True

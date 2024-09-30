@@ -10,14 +10,17 @@ from _pytest.nodes import Item
 from _pytest.runner import CallInfo
 from pyboxen import boxen
 from rich.console import Console
+from utils.read_config import get_version
 
 console = Console()
 
 
-@pytest.fixture
+# We can set up global values here via a fixture in root conftest.py
+@pytest.fixture(scope="session")  # scope not needed as in root conftest.py
 def global_value():
     num_cores = multiprocessing.cpu_count()
-    output = "\n🖥️  pytest.fixture in root conftest.py️"
+    version = get_version()
+    output = f"\n🖥️  VERSION: {version} - pytest.fixture in root conftest.py️"
     output += f"\nYou have {multiprocessing.cpu_count()} cores 🖥️"
     return output
 
@@ -49,7 +52,7 @@ def pytest_addoption(parser):
     )
 
 
-# ----- GLOBAL VALUES -----
+# GLOBAL VALUES accessible from request.config.my_global_value in tests
 def pytest_configure(config):
 
     num_cores = multiprocessing.cpu_count()
