@@ -3,11 +3,11 @@ from playwright.sync_api import Page, expect
 
 
 @pytest.fixture(autouse=True)
-def visit_0209_test_page(page: Page):
+def visit_0239_test_page(page: Page):
     page.goto("http://uitestingplayground.com/sampleapp")
 
 
-def test_0210_successful_login(page: Page):
+def test_0230_successful_login(page: Page):
     username = "dan"
     password = "pwd"
 
@@ -26,7 +26,7 @@ def test_0210_successful_login(page: Page):
     expect(label).to_have_text(f"Welcome, {username}!")
 
 
-def test_0211_failed_login(page: Page):
+def test_0231_failed_login(page: Page):
     username = "dan"
     password = "cnasdjc"
 

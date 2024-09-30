@@ -1,7 +1,7 @@
 from playwright.sync_api import Page, expect
 
 
-def test_0212_mouse_over(page: Page):
+def test_0252_mouse_over(page: Page):
     page.goto("http://uitestingplayground.com/mouseover")
 
     link = page.get_by_title("Click me")

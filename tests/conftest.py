@@ -13,6 +13,15 @@ from rich.console import Console
 
 console = Console()
 
+
+@pytest.fixture
+def global_value():
+    num_cores = multiprocessing.cpu_count()
+    output = "\n🖥️  pytest.fixture in root conftest.py️"
+    output += f"\nYou have {multiprocessing.cpu_count()} cores 🖥️"
+    return output
+
+
 # ----- OUTPUT FILE AND LOCATION -----
 report_date = datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
 # practically a GUID...
