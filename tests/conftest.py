@@ -31,6 +31,13 @@ report_date = datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
 FILENAME = f"./results/report_{report_date}_{random.randint(1_000_000, 9_999_999)}.csv"
 
 
+# GLOBAL VALUES accessible from request.config.my_global_value in tests
+def pytest_configure(config):
+
+    num_cores = multiprocessing.cpu_count()
+    config.my_global_value = f"✅ You have {num_cores} cores ✅"
+
+
 # ----- Command Line Arguments -----
 def pytest_addoption(parser):
     parser.addoption(
@@ -50,13 +57,6 @@ def pytest_addoption(parser):
     parser.addoption(
         "--collect", action="store_true", default=False, help="coolect only"
     )
-
-
-# GLOBAL VALUES accessible from request.config.my_global_value in tests
-def pytest_configure(config):
-
-    num_cores = multiprocessing.cpu_count()
-    config.my_global_value = f"✅ You have {num_cores} cores ✅"
 
 
 # A pytest hook to for modifying collected items
@@ -127,6 +127,7 @@ def pytest_collection_modifyitems(items, config):
             pytest.exit("Collect finished", returncode=0)
 
 
+# ========= CSV RESULTS FILE =========
 @pytest.hookimpl(hookwrapper=True)
 def pytest_runtest_makereport(item: Item, call: CallInfo):
     # item is actual a test.
@@ -203,6 +204,7 @@ def pytest_runtest_makereport(item: Item, call: CallInfo):
             print("\nERROR:", e)
 
 
+# ========= PASS/FAIL STATUS =========
 # report is report for a single test
 # @pytest.hookimpl
 def pytest_report_teststatus(report, config):
@@ -227,6 +229,7 @@ def pytest_report_teststatus(report, config):
         return report.outcome, "E", ("FAILED ❌")  # changed from recording
 
 
+# ========== Report Header =========
 def pytest_report_header(config):
     if config.getoption("verbose") > 0:
         output = "============================================"
@@ -253,6 +256,7 @@ def pytest_runtest_call(item):
     item.add_report_section("call", "custom", "content")
 
 
+# ========= Terminal Summary =========
 def pytest_terminal_summary(terminalreporter, exitstatus, config):
     reports = terminalreporter.getreports("")
     # this holds record_property custom data
