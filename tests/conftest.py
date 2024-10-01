@@ -229,7 +229,8 @@ def pytest_report_teststatus(report, config):
 
 def pytest_report_header(config):
     if config.getoption("verbose") > 0:
-        output = "📝 ✅ pytest_report_header ❌"
+        output = "============================================"
+        output += "\n\t📝 pytest_report_header 📝"
         print(
             boxen(
                 output,
