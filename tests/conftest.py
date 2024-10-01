@@ -224,7 +224,7 @@ def pytest_report_teststatus(report, config):
     if report.when == "call" and report.passed:
         # we can style the text in long formats. Just color and bold no italic
         # does not work for error?
-        return report.outcome, "T", ("PASSED ✅", {"green": True, "bold": True})
+        return report.outcome, "T", ("PASSED! ✅", {"cyan": True, "bold": True})
     if report.when == "call" and report.failed:
         return report.outcome, "E", ("FAILED ❌")  # changed from recording
 
