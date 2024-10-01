@@ -47,7 +47,7 @@ def test_0005_SET_many_markers():
 # A test using pytest.raises
 @pytest.mark.sanity
 def test_0006_SET_case01():
-    console.print("[dark_orange bold]Example [/]")
+    console.print("[dark_orange bold italic]Example output pytest.raises passes[/]")
     with pytest.raises(ZeroDivisionError):
         assert 1 / 0
 

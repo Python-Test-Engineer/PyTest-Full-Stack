@@ -232,15 +232,15 @@ def pytest_report_teststatus(report, config):
 # ========== Report Header =========
 def pytest_report_header(config):
     if config.getoption("verbose") > 0:
-        output = "============================================"
-        output += "\n\t📝 pytest_report_header 📝"
+        output = "============================================="
+        output += "\n\t📝 🍀 pytest_report_header 📝"
         print(
             boxen(
                 output,
                 title="[blue]We can add a report header[/] [black on cyan] here... [/]",
                 subtitle="pytest_report_header",
                 subtitle_alignment="left",
-                color="green",
+                color="blue",
                 padding=1,
             )
         )
