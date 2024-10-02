@@ -3,8 +3,12 @@ def add(x, y):
 
 
 def test_add_pass():
-    assert add(1, 2) == 3
+    actual_result = add(1, 2)
+    expected_result = 3
+    assert actual_result == expected_result
 
 
 def test_add_fail():
-    assert add(1, 2) == 4
+    actual_result = add(2, 2) + 1  # introduce failure
+    expected_result = 4
+    assert actual_result == expected_result
