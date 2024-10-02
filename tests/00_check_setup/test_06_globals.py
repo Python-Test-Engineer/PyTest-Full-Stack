@@ -1,4 +1,4 @@
-"""Examples of using globals"""
+"""Examples of using global fizture and request fixture in tests"""
 
 # We don't need to import pytest for built-in fixtures
 

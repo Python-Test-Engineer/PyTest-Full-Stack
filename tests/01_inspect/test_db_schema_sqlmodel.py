@@ -1,3 +1,5 @@
+"""Testing SQLModel"""
+
 import pytest
 from sqlmodel import create_engine, inspect
 from sqlmodel import Integer

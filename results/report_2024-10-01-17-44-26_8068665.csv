@@ -1,9 +1,0 @@
-0001|test_0001_SET_pass|tests/00_check_setup/test_01_setup.py::test_0001_SET_pass|PASSED|0.003902|
-0002|test_0002_SET_xfail|tests/00_check_setup/test_01_setup.py::test_0002_SET_xfail|X-FAILED PASSED|0.000177|xfail
-0003|test_0003_SET_xpass|tests/00_check_setup/test_01_setup.py::test_0003_SET_xpass|X-PASSED|1.000754|xfail
-0004|test_0004_SET_this_will_fail|tests/00_check_setup/test_01_setup.py::test_0004_SET_this_will_fail|FAILED|0.003334|
-0005|test_0005_SET_many_markers|tests/00_check_setup/test_01_setup.py::test_0005_SET_many_markers|PASSED|0.000148|inner-setup-outer-sanity
-0006|test_0006_SET_case01|tests/00_check_setup/test_01_setup.py::test_0006_SET_case01|PASSED|0.001419|sanity
-0008|test_0008_SET_match_raises|tests/00_check_setup/test_01_setup.py::test_0008_SET_match_raises|PASSED|0.000857|
-0009|test_0009_SET_simple_case[1-2]|tests/00_check_setup/test_01_setup.py::TestClassSetup::test_0009_SET_simple_case[1-2]|PASSED|0.000142|
-0009|test_0009_SET_simple_case[3-4]|tests/00_check_setup/test_01_setup.py::TestClassSetup::test_0009_SET_simple_case[3-4]|PASSED|0.000136|

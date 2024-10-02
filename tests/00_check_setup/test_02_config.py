@@ -1,4 +1,4 @@
-"""Test config"""
+"""Test reading of config.ini file"""
 
 from utils.read_config import get_version, get_pet_api_url
 

@@ -1,4 +1,4 @@
-"""Test import from src folder"""
+"""Example of class based tests with setup methods and teardown methods"""
 
 from rich.console import Console
 
@@ -9,7 +9,7 @@ console = Console()
 
 # Both class and def must follow naming conventions as specified in pytest.ini
 class TestSample:
-    # we can define setup and teardown methods as well
+    # We can define setup and teardown methods as well. The setup method is run before the test method and the teardown method is run after the test method for each test.
 
     def setup_method(self, method):
         console.print(f"\n[dark_orange italic]Running setup for {method.__name__}[/]")

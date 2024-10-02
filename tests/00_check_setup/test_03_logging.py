@@ -1,4 +1,6 @@
-"""Some assert examples"""
+"""Example of using the logging module with settings in the pytest.ini file
+Uses sleep so that one can view entries go in to the log file
+"""
 
 from time import sleep
 import logging

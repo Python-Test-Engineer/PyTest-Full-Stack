@@ -1,4 +1,4 @@
-"""Some basic asserts"""
+"""Some basic asserts to check all is wired up"""
 
 from time import sleep
 import pytest
@@ -8,7 +8,6 @@ from src.sample import add
 console = Console()
 
 
-# A test with console formatting and sleep
 def test_0001_SET_pass():
     console.print("\n[blue bold]Testing add function...[/]\n")
     assert add(1, 4) == 5
@@ -20,7 +19,7 @@ def test_0002_SET_xfail():
     assert 0
 
 
-# A test that was expected to fail but passes so is an xpas
+# A test that was expected to fail but passes so is an xpass
 @pytest.mark.xfail
 def test_0003_SET_xpass():
     sleep(1)

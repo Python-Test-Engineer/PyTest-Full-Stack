@@ -1,4 +1,4 @@
-"""Mock ope"""
+"""Mock open example"""
 
 from unittest import mock
 
