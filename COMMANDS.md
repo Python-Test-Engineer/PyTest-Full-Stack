@@ -10,6 +10,8 @@ For a self-contained pytest-html report with css and images in one file:
 
 ## Coverage
 
-`python -m pytest -vs --cov-report html --cov .`
+For brevity, we will select a subset of tests:
+
+`python -m pytest -vs tests\02_py_coffee --cov-report html --cov .`
 
 A report `index.html` will be in htmlcov folder.

@@ -1,4 +1,0 @@
-2024-10-12 18:33:47 [    INFO] [test_03_logging] test_a1 (test_03_logging.py:16)
-2024-10-12 18:33:49 [    INFO] [test_03_logging] test_a2 (test_03_logging.py:22)
-2024-10-12 18:33:50 [   ERROR] [test_03_logging] test_case03 xfail (test_03_logging.py:38)
-2024-10-12 18:33:51 [   ERROR] [test_03_logging] func1 ValueError (test_03_logging.py:29)
