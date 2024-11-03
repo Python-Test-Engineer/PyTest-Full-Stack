@@ -6,11 +6,11 @@
 
 For a self-contained pytest-html report with css and images in one file:
 
-`python -m pytest --html=reports/report.html --self-contained-html -vs`
+`python -m pytest --html=reports/report.html --self-contained-html -vs tests/00_check_setup`
+
+`--self-contained` means just one file and if we don't specify tests it will work on all `tests` folder.
 
 ## Coverage
-
-For brevity, we will select a subset of tests:
 
 `python -m pytest -vs tests\02_py_coffee --cov-report html --cov .`
 
